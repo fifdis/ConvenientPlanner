@@ -9,11 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Calendar">
+        </activity>
         <activity android:name=".daytask">
         </activity>
         <activity android:name=".Newtask"/>
-
-        <activity android:name=".Calendar"/>
         <activity
                 android:name=".OptionsActivity"
                 android:theme="@style/AppTheme.NoActionBar">

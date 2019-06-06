@@ -11,7 +11,7 @@
                   android:layout_centerHorizontal="true"
                   android:id="@+id/text_field"
                   android:layout_marginTop="40dp"
-                  android:text="Hello, <User>"
+                  android:text="Hello, User"
                   android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                   android:background="#FFFFFF"/>
         <LinearLayout android:layout_width="wrap_content"

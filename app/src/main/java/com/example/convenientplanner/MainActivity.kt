@@ -19,11 +19,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         newtsk.setOnClickListener {
-            val intent = Intent(this, OptionsActivity::class.java)
+            val intent = Intent(this, Newtask::class.java)
             startActivity(intent)
         }
         calend.setOnClickListener {
-            val intent = Intent(this, OptionsActivity::class.java)
+            val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
         //test
