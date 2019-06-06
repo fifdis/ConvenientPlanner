@@ -11,19 +11,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         settings.setOnClickListener {
-            val intent = Intent(this, activity_options::class.java)
+            val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
         }
         list.setOnClickListener {
-            val intent = Intent(this, activity_options::class.java)
+            val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
         }
         newtsk.setOnClickListener {
-            val intent = Intent(this, activity_options::class.java)
+            val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
         }
         calend.setOnClickListener {
-            val intent = Intent(this, activity_options::class.java)
+            val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
         }
         //test

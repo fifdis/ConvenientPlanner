@@ -7,6 +7,16 @@
         android:layout_height="match_parent"
         android:background="#8490f3">
 
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/back_from_options"
+            android:layout_marginTop="10dp"
+            android:text="@string/back"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+    />
+
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_centerHorizontal="true"

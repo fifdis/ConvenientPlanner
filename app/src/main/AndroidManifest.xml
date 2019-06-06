@@ -11,11 +11,11 @@
             android:theme="@style/AppTheme">
         <activity android:name=".daytask">
         </activity>
-        <activity android:name=".Newtask">
-        </activity>
+        <activity android:name=".Newtask"/>
+
+        <activity android:name=".Calendar"/>
         <activity
-                android:name=".activity_options"
-                android:label="@string/title_activity_options"
+                android:name=".OptionsActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".MainActivity">
