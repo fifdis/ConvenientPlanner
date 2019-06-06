@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Convenient Planner</string>
     <string name="title_activity_options">activity_options</string>
+    <string name="back">back</string>
+    <string name="june_5_2019_wednesday">June 5, 2019, wednesday</string>
+    <string name="your_tasks_for_this_day">Your tasks for this day</string>
+    <string name="_5">5</string>
+    <string name="wednesday">Wednesday</string>
 </resources>
