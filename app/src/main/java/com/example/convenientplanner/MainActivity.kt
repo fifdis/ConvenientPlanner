@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         settings.setOnClickListener {
             val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
-        } 
+        }
         list.setOnClickListener {
             val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
