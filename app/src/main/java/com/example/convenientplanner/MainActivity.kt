@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //test
+        //GOSPODI ZARABOTALO
 
     }
 }
