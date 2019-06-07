@@ -8,6 +8,11 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true">
 
+    <LinearLayout android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
     <ImageButton android:layout_width="50dp"
             android:layout_height="50dp"
             android:id = "@+id/back_from_options"
@@ -16,6 +21,8 @@
             android:layout_marginLeft="5dp"
 
     />
+
+    </LinearLayout>
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
@@ -92,14 +99,21 @@
         />
     </LinearLayout>
 
+    <LinearLayout android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
     <ImageButton
             android:id="@+id/button_tocalendar5"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="360dp"
+            android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             app:srcCompat="@android:drawable/ic_menu_today"
     >
     </ImageButton>
+
+    </LinearLayout>
 
 </RelativeLayout>

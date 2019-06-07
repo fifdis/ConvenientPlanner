@@ -19,11 +19,6 @@ class Calendar : AppCompatActivity() {
             startActivity(intent)
         }
 
-        to_daytask.setOnClickListener {
-            val intent = Intent(this, daytask::class.java)
-            startActivity(intent)
-        }
-
 
         button_tosettings1.setOnClickListener {
             val intent = Intent(this, OptionsActivity::class.java)

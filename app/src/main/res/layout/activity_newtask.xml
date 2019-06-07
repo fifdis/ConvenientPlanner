@@ -127,11 +127,33 @@
             android:textColor="#ffffff">
     </EditText>
 
+    <LinearLayout android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+    <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+    >
+    </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
     <ImageButton
             android:id="@+id/button_tocalendar4"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="350dp"
+            android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             app:srcCompat="@android:drawable/ic_menu_today"
     >
@@ -142,22 +164,14 @@
             android:id="@+id/button_tosettings4"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="300dp"
+            android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             app:srcCompat="@android:drawable/ic_menu_manage"
 
     >
     </ImageButton>
 
-    <ImageButton
-            android:id="@+id/button_back"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            app:srcCompat="@android:drawable/ic_menu_revert"
-           >
-    </ImageButton>
+    </LinearLayout>
 
 
 
