@@ -30,7 +30,7 @@ class Calendar : AppCompatActivity() {
             startActivity(intent)
         }
         newtsk2.setOnClickListener {
-            val intent = Intent(this, OptionsActivity::class.java)
+            val intent = Intent(this, Newtask::class.java)
             startActivity(intent)
         }
     }
