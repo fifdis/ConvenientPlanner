@@ -2,8 +2,8 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#8490f3">
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/topgradient">
 
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,5 +55,24 @@
             android:textSize="30dp"
             android:textColor="#ffffff"
             android:freezesText="false"/>
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true">
+
+        <android.support.design.widget.FloatingActionButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                app:rippleColor="#C1FBF9"
+                android:src="@android:drawable/btn_star"
+                android:focusable="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/newtsk"
+        />
+
+    </RelativeLayout>
 
 </RelativeLayout>
