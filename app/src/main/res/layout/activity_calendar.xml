@@ -4,7 +4,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:background="#8490f3">
+        android:background="@drawable/topgradient">
 
     <ImageButton android:layout_width="50dp"
             android:layout_height="50dp"
@@ -66,4 +66,21 @@
             app:srcCompat="@android:drawable/ic_menu_today"
 
     />
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true">
+        <android.support.design.widget.FloatingActionButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                app:rippleColor="#C1FBF9"
+                android:src="@android:drawable/btn_star"
+                android:focusable="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/newtsk"
+        />
+
+    </RelativeLayout>
 </RelativeLayout>

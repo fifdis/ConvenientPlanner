@@ -2,14 +2,14 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:background="#8490f3">
+        android:layout_height="match_parent"
+        android:background="@drawable/topgradient">
 
     <ImageButton android:layout_width="50dp"
             android:layout_height="50dp"
             android:id = "@+id/back_from_options"
             android:layout_marginTop="5dp"
-                 app:srcCompat="@android:drawable/ic_menu_revert"
+            app:srcCompat="@android:drawable/ic_menu_revert"
             android:layout_marginLeft="5dp"
 
     />
