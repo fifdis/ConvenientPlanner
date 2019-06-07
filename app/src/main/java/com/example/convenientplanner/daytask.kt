@@ -31,5 +31,11 @@ class daytask : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        newtsk3.setOnClickListener {
+            val intent = Intent(this, OptionsActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

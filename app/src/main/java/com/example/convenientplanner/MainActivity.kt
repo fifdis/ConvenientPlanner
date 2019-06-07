@@ -22,7 +22,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
         }
-
+        newtsk1.setOnClickListener {
+            val intent = Intent(this, OptionsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
 
