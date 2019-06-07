@@ -16,7 +16,8 @@
             android:id="@+id/month"
             android:textSize="30dp"
             android:textColor="#c1fbf9"
-            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="140dp"
+
 
     />
 
@@ -38,7 +39,7 @@
             android:id="@+id/day"
             android:layout_marginTop="2dp"
             android:textSize="30dp"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="120dp"
             android:textColor="#ffffff"/>
 
     <TextView
@@ -70,7 +71,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/weekday"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="190dp"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="35dp"
             android:textSize="15dp"
             android:textColor="#ffffff"/>
@@ -147,18 +148,37 @@
             android:textColor="#c1fbf9"/>
 
 
-
-    <Button
-            android:id="@+id/button_tocalendar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+    <ImageButton
+            android:id="@+id/button_tocalendar2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginTop="5dp"
-            android:text=" Back!"
+            android:layout_marginLeft="300dp"
+            app:srcCompat="@android:drawable/ic_menu_today"
     >
-    </Button>
+    </ImageButton>
 
 
+    <ImageButton
+            android:id="@+id/button_tosettings2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="350dp"
+            app:srcCompat="@android:drawable/ic_menu_manage"
+    >
+    </ImageButton>
+
+
+    <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+           >
+    </ImageButton>
 
 
 

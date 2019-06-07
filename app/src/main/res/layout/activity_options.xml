@@ -2,17 +2,16 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="#8490f3">
 
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+    <ImageButton android:layout_width="50dp"
+            android:layout_height="50dp"
             android:id = "@+id/back_from_options"
-            android:layout_marginTop="10dp"
-            android:text="@string/back"
-            android:layout_marginLeft="10dp"
-            android:textSize="30dp"
-            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+                 app:srcCompat="@android:drawable/ic_menu_revert"
+            android:layout_marginLeft="5dp"
+
     />
 
     <TextView android:layout_width="wrap_content"
@@ -89,4 +88,15 @@
                 android:id="@+id/switch_pin"
         />
     </LinearLayout>
+
+    <ImageButton
+            android:id="@+id/button_tocalendar5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@android:drawable/ic_menu_today"
+    >
+    </ImageButton>
+
 </RelativeLayout>

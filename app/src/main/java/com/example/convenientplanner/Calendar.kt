@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_calendar.*
+import kotlinx.android.synthetic.main.activity_daytask.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class Calendar : AppCompatActivity() {
@@ -20,6 +21,12 @@ class Calendar : AppCompatActivity() {
 
         to_daytask.setOnClickListener {
             val intent = Intent(this, daytask::class.java)
+            startActivity(intent)
+        }
+
+
+        button_tosettings1.setOnClickListener {
+            val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
         }
 

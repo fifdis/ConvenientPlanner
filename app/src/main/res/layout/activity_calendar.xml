@@ -3,23 +3,23 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="#8490f3">
 
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id = "@+id/back_from_calendar"
-            android:layout_marginTop="10dp"
-            android:text="@string/back"
+    <ImageButton android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/back_from_calendar"
+            android:layout_marginTop="5dp"
+                 app:srcCompat="@android:drawable/ic_menu_revert"
             android:layout_marginLeft="10dp"
-            android:textSize="30dp"
-            android:textColor="#ffffff"
+
     />
 
     <TextView
             android:text="@string/june"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:id="@+id/month"
             android:textSize="30dp"
             android:textColor="#c1fbf9"
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/day"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="12dp"
             android:textSize="30dp"
             android:layout_marginLeft="150dp"
             android:textColor="#ffffff"/>
@@ -43,7 +43,7 @@
             android:id="@+id/weekday"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="190dp"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="45dp"
             android:textSize="15dp"
             android:textColor="#ffffff"/>
 
@@ -56,4 +56,14 @@
             android:textColor="#ffffff"
             android:freezesText="false"/>
 
+
+    <ImageButton
+            android:id="@+id/button_tosettings1"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="350dp"
+            app:srcCompat="@android:drawable/ic_menu_today"
+
+    />
 </RelativeLayout>
