@@ -9,16 +9,25 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Calendar">
+        <activity android:name=".Calendar"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".daytask">
+        <activity android:name=".daytask"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Newtask"/>
+        <activity android:name=".Newtask"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
         <activity
                 android:name=".OptionsActivity"
-                android:theme="@style/AppTheme.NoActionBar">
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
