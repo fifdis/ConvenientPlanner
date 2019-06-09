@@ -26,8 +26,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
-        //test
-        //GOSPODI ZARABOTALO
+        if (intent.hasExtra(Newtask.intentDataKey)){
+            text_field.text = intent.getStringExtra(Newtask.intentDataKey)
+        }
+
 
     }
 }
