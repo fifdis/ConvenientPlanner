@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        if (intent.hasExtra(Newtask.intentDataKey)){
+            text_field.text = intent.getStringExtra(Newtask.intentDataKey)
+        }
+
         settings.setOnClickListener {
             val intent = Intent(this, OptionsActivity::class.java)
             startActivity(intent)
@@ -26,6 +30,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Newtask::class.java)
             startActivity(intent)
         }
+
+
+
+
     }
 }
 
