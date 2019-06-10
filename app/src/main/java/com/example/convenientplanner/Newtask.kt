@@ -53,7 +53,7 @@ class Newtask : AppCompatActivity() {
         val day = c.get(Calendar.DAY_OF_MONTH)
 
         val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
-            choose_date.setText("""0$dayOfMonth.0${monthOfYear + 1}.$year""")
+            choose_date.setText("""$dayOfMonth.${monthOfYear + 1}.$year""")
 
         }, cyear, month, day)
         dpd.show()
@@ -66,7 +66,22 @@ class Newtask : AppCompatActivity() {
 
         val tpd = TimePickerDialog(this,TimePickerDialog.OnTimeSetListener(function = { view, h, m ->
 
-            starts_at.setText(h.toString() + ":0" + m)
+            starts_at.setText(h.toString() + ":" + m)
+
+        }),hour,minute,false)
+
+        tpd.show()
+
+    }
+    @RequiresApi(Build.VERSION_CODES.N)
+    fun clickTimePicker2(view: View) {
+        val c = Calendar.getInstance()
+        val hour = c.get(Calendar.HOUR)
+        val minute = c.get(Calendar.MINUTE)
+
+        val tpd = TimePickerDialog(this,TimePickerDialog.OnTimeSetListener(function = { view, h, m ->
+
+            ends_at.setText(h.toString() + ":" + m)
 
         }),hour,minute,false)
 
