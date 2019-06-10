@@ -157,6 +157,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="300dp"
             app:srcCompat="@android:drawable/ic_menu_today"
+            android:background="@null"
     >
     </ImageButton>
 
@@ -171,6 +172,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             app:srcCompat="@android:drawable/ic_menu_manage"
+            android:background="@null"
     >
     </ImageButton>
 
@@ -182,6 +184,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             app:srcCompat="@android:drawable/ic_menu_revert"
+            android:background="@null"
            >
     </ImageButton>
 
