@@ -16,6 +16,11 @@ class OptionsActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        bg4.setOnClickListener {
+            val intent = Intent(this, Doki::class.java)
+            startActivity(intent)
+        }
     }
 
 }
