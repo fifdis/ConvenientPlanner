@@ -15,7 +15,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/month"
+            android:id="@+id/date"
             android:textSize="30dp"
             android:textColor="#c1fbf9"
             android:layout_marginLeft="140dp"
@@ -51,19 +51,25 @@
     >
     </ImageButton>
 
+    </LinearLayout>
 
+    <LinearLayout android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
     <ImageButton
             android:id="@+id/button_back"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="205dp"
             app:srcCompat="@android:drawable/ic_menu_revert"
             android:background="@null"
            >
     </ImageButton>
 
     </LinearLayout>
+
 
     <RelativeLayout android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

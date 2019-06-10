@@ -3,6 +3,8 @@ package com.example.convenientplanner
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import com.example.convenientplanner.Newtask.Companion.intentDataKey
 import kotlinx.android.synthetic.main.activity_daytask.*
 import kotlinx.android.synthetic.main.activity_daytask.button_back
 import kotlinx.android.synthetic.main.activity_daytask.button_tocalendar2

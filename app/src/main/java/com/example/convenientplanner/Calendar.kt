@@ -25,10 +25,10 @@ class Calendar : AppCompatActivity() {
             Toast.makeText(applicationContext, selectedDate, Toast.LENGTH_SHORT).show()
 
 
-            /* val intent = Intent(this, daytask::class.java)
+             val intent = Intent(this, daytask::class.java)
             intent.putExtra("date", selectedDate)
             startActivity(intent)
-            */
+
         }
 
 
