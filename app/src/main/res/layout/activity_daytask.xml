@@ -25,16 +25,6 @@
 
 
 
-    <ImageButton
-            android:id="@+id/button_tocalendar2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="300dp"
-            app:srcCompat="@android:drawable/ic_menu_today"
-            android:background="@null"
-    >
-    </ImageButton>
 
     <LinearLayout android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
@@ -50,6 +40,19 @@
             android:background="@null"
     >
     </ImageButton>
+
+        <ImageButton
+                android:id="@+id/button_tocalendar2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@android:drawable/ic_menu_today"
+                android:background="@null"
+        >
+        </ImageButton>
+
+
 
     </LinearLayout>
 
