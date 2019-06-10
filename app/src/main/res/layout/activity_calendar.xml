@@ -2,24 +2,26 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:background="@drawable/topgradient">
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/topgradient"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
 
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id = "@+id/back_from_calendar"
-            android:layout_marginTop="10dp"
-            android:text="@string/back"
+    <ImageButton android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/back_from_calendar"
+            android:layout_marginTop="5dp"
+                 app:srcCompat="@android:drawable/ic_menu_revert"
             android:layout_marginLeft="10dp"
-            android:textSize="30dp"
-            android:textColor="#ffffff"
+android:background="@null"
     />
 
     <TextView
             android:text="@string/june"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:id="@+id/month"
             android:textSize="30dp"
             android:textColor="#c1fbf9"
@@ -31,9 +33,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/day"
-            android:layout_marginTop="52dp"
-            android:textSize="30dp"
             android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+
             android:textColor="#ffffff"/>
 
     <TextView
@@ -43,24 +46,32 @@
             android:id="@+id/weekday"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="190dp"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="45dp"
             android:textSize="15dp"
             android:textColor="#ffffff"/>
 
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/to_daytask"
-            android:text="@string/your_tasks_for_this_day"
-            android:layout_marginTop="600dp"
-            android:textSize="30dp"
-            android:textColor="#ffffff"
-            android:freezesText="false"/>
+    <RelativeLayout android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+        <ImageButton
+                android:id="@+id/button_tosettings1"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@android:drawable/ic_menu_manage"
+                android:background="@null"
+
+        />
+
+    </RelativeLayout>
 
     <RelativeLayout android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true">
-
         <android.support.design.widget.FloatingActionButton
                 android:layout_width="60dp"
                 android:layout_height="60dp"
@@ -70,9 +81,8 @@
                 android:focusable="true"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
-                android:id="@+id/newtsk"
+                android:id="@+id/newtsk2"
         />
 
     </RelativeLayout>
-
 </RelativeLayout>

@@ -3,6 +3,7 @@ package com.example.convenientplanner
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_newtask.*
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
@@ -24,6 +25,17 @@ class Newtask : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        button_tocalendar4.setOnClickListener {
+            val intent = Intent(this, com.example.convenientplanner.Calendar::class.java)
+            startActivity(intent)
+        }
+
+        button_tosettings4.setOnClickListener {
+            val intent = Intent(this, OptionsActivity::class.java)
+            startActivity(intent)
+        }
+
         button_add.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.putExtra(intentDataKey, editText.getText().toString())
@@ -59,6 +71,7 @@ class Newtask : AppCompatActivity() {
         }),hour,minute,false)
 
         tpd.show()
+
     }
 
 }
