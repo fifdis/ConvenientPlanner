@@ -218,19 +218,14 @@
             android:text="select time"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:onClick="clickTimePicker"
             android:layout_marginTop="15dp"
-
+            android:onClick="clickTimePicker2"
+            android:id="@+id/button_time2"
             android:background="@null"
             android:textColor="#ffffff"
     />
 
     </LinearLayout>
-
-
-
-
-
 
     <RelativeLayout android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
