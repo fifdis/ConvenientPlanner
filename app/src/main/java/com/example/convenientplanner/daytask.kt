@@ -39,6 +39,9 @@ class daytask : AppCompatActivity() {
             startActivity(intent)
         }
 
+        if (intent.hasExtra("date")){
+            date.text = intent.getStringExtra("date")
+        }
 
 
     }

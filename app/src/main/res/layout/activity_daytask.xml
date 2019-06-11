@@ -11,17 +11,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true">
 
-    <TextView
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/date"
-            android:textSize="30dp"
-            android:textColor="#c1fbf9"
-            android:layout_marginLeft="140dp"
-
-
-    />
 
 
 
@@ -30,6 +20,19 @@
                     android:layout_alignParentTop="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textSize="25dp"
+            android:textColor="#c1fbf9"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+
+    />
+
     <ImageButton
             android:id="@+id/button_tosettings2"
             android:layout_width="50dp"

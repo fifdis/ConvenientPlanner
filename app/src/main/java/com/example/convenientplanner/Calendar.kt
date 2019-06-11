@@ -8,6 +8,8 @@ import android.widget.Toast
 import android.widget.CalendarView
 import android.widget.CalendarView.OnDateChangeListener
 import android.view.View
+//import com.example.convenientplanner.Calendar.Companion.intentDataKey
+import kotlinx.android.synthetic.main.activity_newtask.*
 
 
 class Calendar : AppCompatActivity() {
@@ -20,7 +22,7 @@ class Calendar : AppCompatActivity() {
         val calendarView = findViewById(R.id.calendarView) as CalendarView
         calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
             val selectedDate = StringBuilder().append(month + 1)
-                .append("-").append(dayOfMonth).append("-").append(year)
+                .append("/").append(dayOfMonth).append("/").append(year)
                 .append(" ").toString()
             Toast.makeText(applicationContext, selectedDate, Toast.LENGTH_SHORT).show()
 
