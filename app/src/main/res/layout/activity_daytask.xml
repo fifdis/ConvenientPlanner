@@ -11,160 +11,28 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true">
 
-    <TextView
-            android:text="June"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/month"
-            android:textSize="30dp"
-            android:textColor="#c1fbf9"
-            android:layout_marginLeft="140dp"
 
 
-    />
-
-    <TextView
-            android:text="Exercise"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tag1"
-            android:layout_marginTop="100dp"
-            android:textSize="17dp"
-            android:layout_marginLeft="80dp"
-            android:textColor="#ffffff"/>
 
 
-    <TextView
-            android:text="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/day"
-            android:layout_marginTop="2dp"
-            android:textSize="30dp"
-            android:layout_marginLeft="120dp"
-            android:textColor="#ffffff"/>
-
-    <TextView
-            android:text="Very important task"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tag2"
-            android:layout_below="@+id/tag1"
-            android:layout_marginTop="45dp"
-            android:textSize="17dp"
-            android:layout_marginLeft="80dp"
-            android:textColor="#ffffff"/>
-
-    <TextView
-            android:text="Urgent task"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tag3"
-            android:layout_below="@+id/tag2"
-            android:layout_marginTop="15dp"
-            android:textSize="17dp"
-            android:layout_marginLeft="80dp"
-            android:textColor="#ffffff"/>
-
-
-    <TextView
-            android:text="Wednesday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/weekday"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="35dp"
-            android:textSize="15dp"
-            android:textColor="#ffffff"/>
-
-    <TextView
-            android:text="Make some sketches"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tag4"
-            android:layout_below="@+id/tag3"
-            android:layout_marginTop="90dp"
-            android:textSize="17dp"
-            android:layout_marginLeft="80dp"
-            android:textColor="#ffffff"/>
-
-    <TextView
-            android:text="Read War and peace "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tag5"
-            android:layout_below="@+id/tag4"
-            android:layout_marginTop="60dp"
-            android:textSize="17dp"
-            android:layout_marginLeft="80dp"
-            android:textColor="#ffffff"/>
-
-    <TextView
-            android:text="Health"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/category1"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/notes"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="70dp"
-            android:textSize="20dp"
-            android:textColor="#c1fbf9"
-    />
-
-    <TextView
-            android:text="School"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/category2"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/category1"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:textSize="20dp"
-            android:textColor="#c1fbf9"/>
-
-    <TextView
-            android:text="Hobby"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/category3"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/category2"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="110dp"
-            android:textSize="20dp"
-            android:textColor="#c1fbf9"/>
-
-    <TextView
-            android:text="Reading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/category4"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/category3"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="60dp"
-            android:textSize="20dp"
-            android:textColor="#c1fbf9"/>
-
-
-    <ImageButton
-            android:id="@+id/button_tocalendar2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="300dp"
-            app:srcCompat="@android:drawable/ic_menu_today"
-            android:background="@null"
-    >
-    </ImageButton>
 
     <LinearLayout android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textSize="25dp"
+            android:textColor="#c1fbf9"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+
+    />
+
     <ImageButton
             android:id="@+id/button_tosettings2"
             android:layout_width="50dp"
@@ -176,19 +44,38 @@
     >
     </ImageButton>
 
+        <ImageButton
+                android:id="@+id/button_tocalendar2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@android:drawable/ic_menu_today"
+                android:background="@null"
+        >
+        </ImageButton>
 
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
     <ImageButton
             android:id="@+id/button_back"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="205dp"
             app:srcCompat="@android:drawable/ic_menu_revert"
             android:background="@null"
            >
     </ImageButton>
 
     </LinearLayout>
+
 
     <RelativeLayout android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

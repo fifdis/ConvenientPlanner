@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="@drawable/topgradient"
@@ -18,37 +18,26 @@ android:background="@null"
     />
 
     <TextView
-            android:text="@string/june"
+            android:text="Choose date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:id="@+id/month"
-            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/month1"
+            android:textSize="20dp"
+            android:textColor="#c1fbf9"
+            android:layout_centerHorizontal="true"
+    />
+    <TextView
+            android:text="and see planned tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/month2"
+            android:textSize="20dp"
             android:textColor="#c1fbf9"
             android:layout_centerHorizontal="true"
     />
 
-    <TextView
-            android:text="@string/_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/day"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="10dp"
-            android:textSize="30dp"
-
-            android:textColor="#ffffff"/>
-
-    <TextView
-            android:text="@string/wednesday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/weekday"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="190dp"
-            android:layout_marginTop="45dp"
-            android:textSize="15dp"
-            android:textColor="#ffffff"/>
 
     <RelativeLayout android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
@@ -85,4 +74,27 @@ android:background="@null"
         />
 
     </RelativeLayout>
+
+
+    <LinearLayout
+            android:id="@+id/LinearLayout1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical" >
+
+        <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendarView"
+                android:minDate="06/01/2019"
+                android:maxDate="10/12/2022"
+                android:layout_marginTop="100dp"
+                android:theme="@style/CalenderViewCustom"
+                android:dateTextAppearance="@style/CalenderViewDateCustomText"
+                android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        />
+
+
+    </LinearLayout>
+
 </RelativeLayout>

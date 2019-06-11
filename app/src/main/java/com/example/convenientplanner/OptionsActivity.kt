@@ -24,12 +24,15 @@ class OptionsActivity : AppCompatActivity() {
 
         button_tocalendar5.setOnClickListener {
             val intent = Intent(this, Calendar::class.java)
+            startActivity(intent)
+        }
 
-            bg4.setOnClickListener {
+        bg4.setOnClickListener {
                 val intent = Intent(this, Doki::class.java)
                 startActivity(intent)
             }
-        }
+
+
     }
 }
 
