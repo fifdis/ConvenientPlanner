@@ -5,17 +5,10 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               android:background="@drawable/topgradient">
+
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:id="@+id/text_field"
-                  android:layout_marginTop="40dp"
-                  android:text="Здесь будут ваши задачи"
-                  android:textSize="40dp"
-                  android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        />
 
         <RelativeLayout android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -63,6 +56,37 @@
             />
 
         </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <ListView
+                    android:id="@+id/lvNotes"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+
+            />
+
+        </LinearLayout>
+
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/text_field"
+                  android:layout_marginTop="15dp"
+                  android:layout_marginLeft="15dp"
+                  android:text="Your tasks for today"
+                  android:textSize="25dp"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                  android:textColor="#c1fbf9"
+
+        />
+
+
     </RelativeLayout>
 </LinearLayout>
 
