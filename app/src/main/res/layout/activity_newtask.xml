@@ -19,7 +19,6 @@
             android:textSize="30dp"
             android:textColor="#c1fbf9"
             android:layout_marginLeft="100dp"
-
     />
 
     <TextView
