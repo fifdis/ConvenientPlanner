@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_newtask.*
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.ContentValues
 import android.icu.util.Calendar
 import android.os.Build
 import android.support.annotation.RequiresApi
@@ -21,6 +22,21 @@ class Newtask : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_newtask)
+
+        var localDB = TaskDB(this)
+
+        button_add.setOnClickListener{
+            var tempTask = editText.text.toString()
+
+            var values = ContentValues()
+            values.put(TaskDB.tasks, tempTask)
+
+            localDB.addTask(values)
+
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         button_back.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -65,7 +81,6 @@ class Newtask : AppCompatActivity() {
         val minute = c.get(Calendar.MINUTE)
 
         val tpd = TimePickerDialog(this,TimePickerDialog.OnTimeSetListener(function = { view, h, m ->
-
             starts_at.setText(h.toString() + ":" + m)
 
         }),hour,minute,false)
