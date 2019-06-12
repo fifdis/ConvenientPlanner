@@ -52,7 +52,7 @@ class Newtask : AppCompatActivity() {
             startActivity(intent)
         }
 
-        button_add.setOnClickListener {
+        btAdd.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.putExtra(intentDataKey, editText.getText().toString())
             startActivity(intent)
