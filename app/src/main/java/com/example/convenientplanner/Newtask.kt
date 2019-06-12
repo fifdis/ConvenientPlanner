@@ -25,7 +25,7 @@ class Newtask : AppCompatActivity() {
 
         var localDB = TaskDB(this)
 
-        button_add.setOnClickListener{
+        btAdd.setOnClickListener{
             var tempTask = editText.text.toString()
 
             var values = ContentValues()
