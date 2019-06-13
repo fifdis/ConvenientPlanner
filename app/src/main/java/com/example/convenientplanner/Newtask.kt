@@ -32,6 +32,7 @@ class Newtask : AppCompatActivity() {
             values.put(TaskDB.tasks, tempTask)
 
             localDB.addTask(values)
+            Toast.makeText(this, """New task created""", Toast.LENGTH_LONG).show()
 
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -52,13 +53,6 @@ class Newtask : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btAdd.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra(intentDataKey, editText.getText().toString())
-            startActivity(intent)
-            Toast.makeText(this, """New task created""", Toast.LENGTH_LONG).show()
-
-        }
     }
 
     @RequiresApi(Build.VERSION_CODES.N)

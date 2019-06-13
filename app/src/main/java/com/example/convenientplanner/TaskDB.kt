@@ -48,6 +48,4 @@ class TaskDB(context: Context) : SQLiteOpenHelper(context, DBName, null, DBVersi
         return arraylist
     }
 
-
-
 }
