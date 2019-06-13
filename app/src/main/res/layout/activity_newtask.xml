@@ -247,6 +247,22 @@
         />
 
     </RelativeLayout>
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_below="@+id/priority"
+            android:layout_marginLeft="30dp"
+    />
+    <Spinner
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/reminders"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+
+    />
 
 
 </RelativeLayout>
