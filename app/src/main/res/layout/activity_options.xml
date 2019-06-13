@@ -17,7 +17,7 @@
             android:layout_height="50dp"
             android:id = "@+id/back_from_options"
             android:layout_marginTop="5dp"
-            app:srcCompat="@android:drawable/ic_menu_revert"
+            app:srcCompat="@drawable/baseline_home_24px"
             android:layout_marginLeft="5dp"
                  android:background="@null"
 
@@ -111,7 +111,7 @@
             android:layout_height="50dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
-            app:srcCompat="@android:drawable/ic_menu_today"
+            app:srcCompat="@drawable/baseline_calendar_24px"
             android:background="@null"
     >
     </ImageButton>

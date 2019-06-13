@@ -139,7 +139,7 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
-                app:srcCompat="@android:drawable/ic_menu_revert"
+                app:srcCompat="@drawable/baseline_home_24px"
                 android:background="@null"
         >
         </ImageButton>
@@ -156,7 +156,7 @@
                 android:layout_height="50dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
-                app:srcCompat="@android:drawable/ic_menu_manage"
+                app:srcCompat="@drawable/baseline_settings_24px"
                 android:background="@null"
         >
         </ImageButton>
@@ -167,7 +167,7 @@
                 android:layout_height="50dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
-                app:srcCompat="@android:drawable/ic_menu_today"
+                app:srcCompat="@drawable/baseline_calendar_24px"
                 android:background="@null"
         >
         </ImageButton>
@@ -239,7 +239,7 @@
                 android:focusable="true"
                 android:id="@+id/btAdd"
                 android:background="@null"
-                app:srcCompat="@android:drawable/ic_menu_add"
+                app:srcCompat="@drawable/baseline_done_24px"
                 android:scaleX="2.5"
                 android:scaleY="2.5"
                 android:layout_marginBottom="5dp"
