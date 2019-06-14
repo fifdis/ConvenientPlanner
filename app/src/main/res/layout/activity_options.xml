@@ -37,51 +37,12 @@
                   android:orientation="vertical"
                   android:layout_height="match_parent">
 
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_marginLeft="10dp"
-                  android:layout_marginTop="100dp"
-                  android:textColor="#c1fbf9"
-                  android:text="Background"
-                  android:textSize="20dp"
-        />
-
-        <LinearLayout android:layout_width="match_parent"
-                      android:orientation="horizontal"
-                      android:layout_height="316dp"
-                      android:gravity="right">
-
-            <ImageButton android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/bg1"
-                         android:layout_marginRight="40dp"
-            />
-
-            <ImageButton android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/bg2"
-                         android:layout_marginRight="40dp"
-            />
-
-            <ImageButton android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/bg3"
-                         android:layout_marginRight="40dp"
-            />
-
-            <ImageButton android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/bg4"
-                         android:layout_marginRight="40dp"
-            />
-
-        </LinearLayout>
 
         <Switch android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="80dp"
                 android:textColor="#c1fbf9"
                 android:text="Notifications"
                 android:textSize="20dp"
@@ -98,6 +59,18 @@
                 android:textSize="20dp"
                 android:id="@+id/switch_pin"
         />
+
+        <Switch android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:textColor="#c1fbf9"
+                android:text="English version"
+                android:textSize="20dp"
+                android:id="@+id/switch_language"
+        />
+
     </LinearLayout>
 
     <LinearLayout android:layout_alignParentRight="true"
@@ -115,6 +88,17 @@
             android:background="@null"
     >
     </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true">
+
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/bg4" android:visibility="invisible"/>
 
     </LinearLayout>
 
