@@ -174,7 +174,7 @@
             android:layout_height="30dp"
             android:id="@+id/button_date"
             android:onClick="clickDataPicker"
-            android:layout_marginTop="205dp"
+            android:layout_marginTop="195dp"
 
             android:background="@null"
             android:textColor="#ffffff"
