@@ -7,17 +7,6 @@
               android:background="@drawable/topgradient">
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="match_parent">
-        <TextView
-                android:text="Your tasks"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/your_tasks"
-                android:textSize="25dp"
-                android:textColor="#c1fbf9"
-                android:layout_marginLeft="125dp"
-                android:layout_marginTop="15dp"
-
-        />
 
         <ListView
                 android:layout_marginTop="60dp"
