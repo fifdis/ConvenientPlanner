@@ -28,8 +28,10 @@ class Newtask : AppCompatActivity() {
         btAdd.setOnClickListener{
             var tempTask = editText.text.toString()
 
+
             var values = ContentValues()
             values.put(TaskDB.tasks, tempTask)
+
 
             localDB.addTask(values)
             Toast.makeText(this, """New task created""", Toast.LENGTH_LONG).show()

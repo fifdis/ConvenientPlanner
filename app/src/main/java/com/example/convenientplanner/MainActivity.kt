@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         var localDB = TaskDB(this)
         var tskDataList = localDB.listTasks("%")
 
-        if(tskDataList.size >= 0) {
+        if(tskDataList.size > 0) {
             var lazyData = ArrayList<String>()
 
             for (temp in tskDataList){

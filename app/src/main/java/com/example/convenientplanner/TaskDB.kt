@@ -16,7 +16,7 @@ class TaskDB(context: Context) : SQLiteOpenHelper(context, DBName, null, DBVersi
     }
     var sqlObj: SQLiteDatabase = this.writableDatabase
     override fun onCreate(p0: SQLiteDatabase?) {
-        var sql1: String = "CREATE TABLE IF NOT EXISTS $tableName (  $tasks TEXT );"
+        var sql1: String = "CREATE TABLE IF NOT EXISTS $tableName (  $tasks TEXT);"
         p0!!.execSQL(sql1);
     }
 

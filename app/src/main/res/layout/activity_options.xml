@@ -98,7 +98,14 @@
 
         <ImageButton android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:id="@+id/bg4" android:visibility="invisible"/>
+                     android:id="@+id/bg4"
+                     android:scaleX="10"
+                     android:scaleY="10"
+                     android:visibility="visible"
+                     android:src="@drawable/prozr"
+                     android:clickable="true"
+                     android:focusable="true"
+        />
 
     </LinearLayout>
 
