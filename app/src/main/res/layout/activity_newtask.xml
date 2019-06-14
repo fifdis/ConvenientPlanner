@@ -58,26 +58,14 @@
 
 
     <TextView
-            android:text="Notes: You can write notes here"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/notes"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="60dp"
-            android:textSize="20dp"
-            android:textColor="#ffffff"/>
-
-
-    <TextView
             android:text="Date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/choosingdate"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/notes"
+            android:layout_below="@id/editText"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="60dp"
             android:textSize="20dp"
             android:textColor="#c1fbf9"
     />
@@ -95,24 +83,12 @@
             android:textColor="#c1fbf9"/>
 
     <TextView
-            android:text="Reminders"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/reminders"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/time"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="100dp"
-            android:textSize="20dp"
-            android:textColor="#c1fbf9"/>
-
-    <TextView
             android:text="Priority"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/priority"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/reminders"
+            android:layout_below="@+id/time"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="60dp"
             android:textSize="20dp"
@@ -124,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="100dp"
-            android:hint="Write your notes here"
+            android:hint="Enter task name"
             android:textColor="#ffffff">
     </EditText>
 
@@ -253,15 +229,6 @@
             android:id="@+id/ratingBar"
             android:layout_below="@+id/priority"
             android:layout_marginLeft="30dp"
-    />
-    <Spinner
-            android:layout_width="245dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner"
-            android:layout_below="@+id/reminders"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="23dp"
-
     />
 
 
