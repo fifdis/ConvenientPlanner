@@ -20,7 +20,7 @@
         />
 
         <ListView
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="60dp"
                 android:id="@+id/tasklist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,6 +51,17 @@
                       android:orientation="horizontal"
                       android:layout_alignParentRight="true"
                       android:layout_alignParentTop="true">
+
+            <TextView
+                    android:text="Your tasks for today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:textSize="25dp"
+                    android:id="@+id/month2"
+                    android:textColor="#c1fbf9"
+                    android:layout_centerHorizontal="true"
+            />
 
             <ImageButton android:layout_width="50dp"
                          android:layout_height="50dp"
